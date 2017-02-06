@@ -1,0 +1,68 @@
+/* this is where all of your CSS styles go */
+
+html,body {
+	width: 100%;
+	height: 100%;
+}
+
+#grid_container {
+	width: 500px;
+	height: 100px;
+	position: relative;
+	left: 50%;
+	top: 30%;
+	margin-top: -50px;
+	margin-left:  -220px;
+	color: #76D7C4;
+}
+
+.text {
+	font-family: 'Asap';
+	font-size: 10em;
+	float: left;
+	margin-left: 5px;
+}
+
+@-webkit-keyframes l_move {
+	0%,100% { top: 0px; left: 0px;}
+	50% { left: 350px; color:#D6EAF8;}
+}
+
+#l {
+	position: relative;
+	-webkit-animation: l_move 10s ease infinite;
+
+}
+
+@-webkit-keyframes p_move {
+	0%,100% { top: 0px; left: 0px; color:#76D7C4; }
+	50% {left:-350px; 300px; color: #5499C7;}
+	60% { -webkit-transform: rotate(-360deg);}
+	70% { color:#D7BDE2;}
+}
+
+#p {
+	position: relative;
+	-webkit-animation: p_move 10s ease infinite;
+}
+
+@-webkit-keyframes o_move {
+	0%,100% { top: 0px; left: 0px;}
+	25% { top: -20px;}
+}
+
+#o {
+	position: relative;
+	-webkit-animation: o_move 3s ease infinite;
+}
+
+@-webkit-keyframes oo_move {
+	0%,100% { top: 0px; left: 0px;}
+	25% { color: #D5F5E3;}
+	
+}
+
+#oo {
+	position: relative;
+	-webkit-animation: oo_move 3s ease infinite;
+}
